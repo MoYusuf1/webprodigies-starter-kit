@@ -10,7 +10,7 @@ type MenuProps = {
 type Props = { orientation: MenuProps}
 
 const menu = (props: Props) => {
-  const {section, OnSetSection} = useNavigation()
+  // const {section, OnSetSection} = useNavigation()
   
   return <div>menu</div>
 
