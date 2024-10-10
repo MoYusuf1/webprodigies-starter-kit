@@ -1,9 +1,9 @@
 import GlassSheet from "@/components/global/glass-sheet"
 import { Button } from "@/components/ui/button"
 import { Logout } from "@/icons"
-import { MenuIcon } from "lucide-react"
 import Link from "next/link"
 import Menu from "./menu"
+import { MenuIcon } from "lucide-react"
 
 type Props = {}
 
