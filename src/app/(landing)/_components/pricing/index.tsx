@@ -1,5 +1,8 @@
 import BackdropGradient from "@/components/global/backdrop-gradient"
 import GradientText from "@/components/global/gradient-text"
+import { Button } from "@/components/ui/button"
+import { Card, CardDescription, CardTitle } from "@/components/ui/card"
+import Link from "next/link"
 import React from "react"
 
 type Props = {}
@@ -23,6 +26,23 @@ const PricingSection = (props: Props) => {
                     collaborate, and cultivate meaningful relationships
                 </p>
             </BackdropGradient>
+
+            <Card className="p-7 mt-10 md:w-auto w-full bg-themeBlack border-themeGray">
+                <div className="flex flex-col gap-2">
+                    <CardTitle>99/m</CardTitle>
+                    <CardDescription className="text-[#B4B0AE]">
+                        Great if you're just getting started
+                    </CardDescription>
+                    <Link href="#" className="w-full mt-3">
+                        <Button
+                            variant="default"
+                            className="bg-[#333337] w-full rounded-2xl text-white hover:text-[#333337]"
+                        >
+                            Start for free
+                        </Button>
+                    </Link>
+                </div>
+            </Card>
         </div>
     )
 }
