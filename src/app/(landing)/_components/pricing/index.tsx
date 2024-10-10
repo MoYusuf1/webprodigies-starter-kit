@@ -2,6 +2,7 @@ import BackdropGradient from "@/components/global/backdrop-gradient"
 import GradientText from "@/components/global/gradient-text"
 import { Button } from "@/components/ui/button"
 import { Card, CardDescription, CardTitle } from "@/components/ui/card"
+import { Check } from "@/icons/check"
 import Link from "next/link"
 import React from "react"
 
@@ -41,6 +42,29 @@ const PricingSection = (props: Props) => {
                             Start for free
                         </Button>
                     </Link>
+                </div>
+                <div className="flex flex-col gap-2 text-[#B4B0AE] mt-5">
+                    <p>Features</p>
+                    <span className="flex gap-2 mt-3 items-center">
+                        <Check />
+                        Feature number 1
+                    </span>
+                    <span className="flex gap-2 items-center">
+                        <Check />
+                        Feature number 1
+                    </span>
+                    <span className="flex gap-2 items-center">
+                        <Check />
+                        Feature number 1
+                    </span>
+                    <span className="flex gap-2 items-center">
+                        <Check />
+                        Feature number 1
+                    </span>
+                    <span className="flex gap-2 items-center">
+                        <Check />
+                        Feature number 1
+                    </span>
                 </div>
             </Card>
         </div>
