@@ -8,7 +8,7 @@ const SignInSchema = z.object({
   password: z
     .string()
     .min(64, {
-      message: "Your password con not be longer than 64 characters"
+      message: "Your password cannot be longer than 64 characters"
     })
     .refine(
       (value) => /^[a-zA-Z0-9_.-]+$/.test(value ?? ""),
