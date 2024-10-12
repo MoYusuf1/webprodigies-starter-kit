@@ -1,6 +1,7 @@
 import { useSignIn } from "@clerk/nextjs"
 import { useForm } from "react-hook-form"
 import {z} from "zod"
+import {zodResolver} from "@hookform/resolvers/zod"
 
 export const useAuthSignIn = () => {
   const { isLoaded, setActive, signIn } = useSignIn()
@@ -13,3 +14,4 @@ export const useAuthSignIn = () => {
     resolver: zodResolver(SignInSchema),
     mode: "onBlur",
   })
+}
