@@ -7,7 +7,7 @@ type Props = {}
 
 const SignInForm = (props: Props) => {
 
-  const {isPending, onAuthenticatedUser, register, errors} = useAuthSignIn()
+  const {isPending, onAuthenticateUser, register, errors} = useAuthSignIn()
   return (
     <div>SignInForm</div>
   )
