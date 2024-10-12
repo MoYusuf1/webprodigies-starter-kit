@@ -1,3 +1,4 @@
+import { onAuthenticatedUser } from '@/actions/auth'
 import React from 'react'
 
 type Props = {
