@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardDescription, CardTitle } from "@/components/ui/card"
 import { Check } from "@/icons/check"
 import Link from "next/link"
-import React from "react"
 
 type Props = {}
 
@@ -31,19 +30,19 @@ const PricingSection = (props: Props) => {
             <Card className="p-7 mt-10 md:w-auto w-full bg-themeBlack border-themeGray">
                 <div className="flex flex-col gap-2">
                     <CardTitle>99/m</CardTitle>
-                    <CardDescription className="text-[#B4B0AE]">
+                    {/* <CardDescription className="text-gray-400">
                         Great if you're just getting started
-                    </CardDescription>
+                    </CardDescription> */}
                     <Link href="#" className="w-full mt-3">
                         <Button
                             variant="default"
-                            className="bg-[#333337] w-full rounded-2xl text-white hover:text-[#333337]"
+                            className="text-gray-800 w-full rounded-2xl hover:text-[#333337]"
                         >
                             Start for free
                         </Button>
                     </Link>
                 </div>
-                <div className="flex flex-col gap-2 text-[#B4B0AE] mt-5">
+                <div className="flex flex-col gap-2 text-gray-300 mt-5">
                     <p>Features</p>
                     <span className="flex gap-2 mt-3 items-center">
                         <Check />
